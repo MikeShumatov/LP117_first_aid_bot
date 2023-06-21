@@ -1,0 +1,41 @@
+CREATE TABLE `t_log` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `user_id` bigint NOT NULL,
+  `s_username` text,
+  `s_first_name` text,
+  `s_last_name` text,
+  `s_language_code` text,
+  `s_is_premium` text,
+  `s_text` text,
+  `dt_dateupd` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+;
+CREATE TABLE `t_user` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `user_id` bigint NOT NULL,
+  `s_username` text,
+  `s_first_name` text,
+  `s_last_name` text,
+  `s_language_code` text,
+  `s_is_premium` text,
+  `s_text` text,
+  `dt_dateupd` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+;
+CREATE TABLE `t_test` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `user_id` bigint NOT NULL,
+  `s_username` text,
+  `s_first_name` text,
+  `s_last_name` text,
+  `s_language_code` text,
+  `s_is_premium` text,
+  `s_text` text,
+  `dt_dateupd` datetime DEFAULT NULL,
+  `s_state1` text,
+  `s_state2` text,
+  `s_state3` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
